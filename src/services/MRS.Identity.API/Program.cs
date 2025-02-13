@@ -7,6 +7,7 @@ var configuration = builder.Configuration;
 
 services.AddApiConfig(configuration);
 services.AddSwaggerConfig();
+services.AddJwtConfig(configuration);
 
 var app = builder.Build();
 
