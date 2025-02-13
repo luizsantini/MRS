@@ -11,5 +11,6 @@ services.AddSwaggerConfig();
 var app = builder.Build();
 
 app.UseApiConfig(app.Environment);
+app.UseSwaggerConfig(app.Environment);
 
 app.Run();
