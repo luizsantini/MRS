@@ -1,6 +1,0 @@
-@MRS.Identity.API_HostAddress = http://localhost:5206
-
-GET {{MRS.Identity.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
