@@ -9,7 +9,7 @@ public static class ApiConfig
     public static void AddApiConfig(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("Teste"))
+            options.UseSqlServer(configuration.GetConnectionString("Default"))
                 .LogTo(Console.WriteLine)
                 .EnableDetailedErrors());
         
